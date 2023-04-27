@@ -77,20 +77,10 @@ const Login = () => {
 
       <div className="dialog-login">
         <form className="login-form" onSubmit={handleSubmit}>
-
-          {/* <div className="header-modal">
-            <h1 className='header-login-title'>Login</h1>
-            <div className="close-btn" onClick={handleClose}>
-              <span> <X /> </span>
-            </div>
-          </div> */}
-
-          {/* Header */}
           <div className="header-modal">
             <h1 className="header-model-title">Log in</h1>
             <X onClick={handleClose} />
           </div>
-
           <div className="form">
             <div className="signup__field">
               <label>
@@ -130,12 +120,6 @@ const Login = () => {
 
               </div>
             }
-
-            {/* <button className="login-btn" type='submit'>
-              Log in
-            </button> */}
-
-            {/* Buttons */}
             <div className="btns-wrapper">
               <button className="login-btn" type='submit' >
                 Log in
