@@ -1,0 +1,181 @@
+@use '_vars';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+
+// reset css
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+label,
+legend,
+p,
+blockquote,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+    // box-shadow: 0 0 0 3px red inset;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.dialog-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    /* Masquer la modale avant son ouverture */
+    transform: translateY(-50px);
+    /* Déplacer la modale vers le haut de l'écran */
+    animation: fadein 0.3s ease-out forwards, slidein 0.5s ease-out forwards;
+
+    /* Ajouter une transition pour l'effet de fondu */
+    transition: opacity 0.3s ease-out;
+}

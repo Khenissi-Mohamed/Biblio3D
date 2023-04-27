@@ -1,0 +1,262 @@
+@media screen and (max-width: 768px) {
+
+  .signup {
+    background-color: #bdb4d3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem !important;
+  }
+
+  .header-modal {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: center;
+  }
+
+  .header-model-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .form-left {
+    flex-direction: column;
+    display: flex;
+    width: 100% !important;
+    height: auto;
+    // margin-bottom: 2rem;
+  }
+
+  .form-right {
+    flex-direction: column;
+    display: flex;
+    width: 100% !important;
+    height: auto;
+    // margin-bottom: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .signup__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .signup__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  .signup__input-password {
+    position: relative;
+  }
+
+  .signup__input-icon-on,
+  .signup__input-icon-off {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%) translateX(-130%);
+    cursor: pointer;
+  }
+
+  .btns-wrapper {
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 1rem;
+  }
+
+  .signup-btn {
+    border: none;
+    background: #00c1ff;
+    color: #FFF;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .signup-btn-log {
+    border: none;
+    background: #00c1ff;
+    color: #FFF;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+}
+
+// desktop //
+
+.signup {
+  background-color: #bdb4d3;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-model-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.form-left {
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.form-right {
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.signup-subtitle {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+
+  font-style: italic;
+}
+
+
+.signup__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+// .signup__field label {
+//   font-size: 16px;
+// }
+
+.signup__input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.signup__input-password {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+
+.signup__input-icon-on,
+.signup__input-icon-off {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%) translateX(-130%);
+  cursor: pointer;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.btns-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-btn {
+  border: none;
+  background: #00c1ff;
+  color: #FFF;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+
+.signup-btn-log {
+  border: none;
+  background: #FF8507;
+  color: #FFF;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+// .signup-btn:hover,
+// .signup-btn-log:hover {
+//   background-color: #fff;
+//   color: #00c1ff;
+//   transition: background-color;
+//   transform: scale(1.1);
+//   transition: all 0.3s ease-in-out;
+// }
+
+// .signup-btn:hover,
+// .signup-btn-log:hover {
+//   background-color: #ff00ff;
+//   color: #fff;
+//   box-shadow: 0px 0px 15px 0px rgba(255, 0, 255, 1);
+//   transition: all 0.3s ease-in-out;
+//   transform: translateY(10px) rotate(360deg);
+// }
+
+.signup-btn:hover,
+.signup-btn-log:hover {
+  background-color: #ff00ff;
+  color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 255, 1);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(10px) rotate(0deg);
+  animation-name: spin-down;
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin-down {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(10px) rotate(360deg);
+  }
+}

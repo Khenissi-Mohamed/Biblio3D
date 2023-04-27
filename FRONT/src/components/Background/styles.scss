@@ -1,0 +1,82 @@
+.background {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 40vh;
+    justify-items: center;
+    align-items: center;
+
+
+    &__image {
+        background-image: url(/src/assets/bg-img.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+}
+
+// text
+.background-content {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 1rem;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #FF8507;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    &__pseudo {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #2CB5ED;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #FFF;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    // btn
+    &__btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+
+    &__btn-down {
+        color: #FF8507;
+        width: 5rem;
+        height: 5rem;
+        animation-name: btnDown-animation;
+        animation-duration: 1.2s;
+        animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes btnDown-animation {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}

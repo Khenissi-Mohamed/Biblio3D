@@ -1,0 +1,150 @@
+.profil__close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 1.05;
+}
+
+.profil__close:hover {
+    scale: 1.2;
+    transition: all 0.3s ease-in-out;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profil-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profil-log {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profil__header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.profil__header__avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.profil-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profil_btns-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.profil_btns-wrapper button:nth-child(2) {
+    background: #ff0000;
+
+
+}
+
+.profil__btn {
+    border: none;
+    background: #00c1ff;
+
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profil-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-bottom: 2rem;
+}
+
+.profil__form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.25rem;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.profil__form-label {
+    font-weight: bold;
+    // margin-bottom: 0.5rem;
+}
+
+.profil-input-wraper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.profil__form-input {
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-radius: 5px;
+    background-color: #ccc;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.profil__form__btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.profil__form__btns button:nth-child(1) {
+    background: #00c1ff;
+
+}
+
+.profil__form__btn {
+    border: none;
+    background: #ff0000;
+
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

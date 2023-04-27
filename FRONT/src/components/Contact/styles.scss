@@ -1,0 +1,115 @@
+// Breackpoint mobile
+@media screen and (max-width: 768px) {
+    .contact-list {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+.contact {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
+    grid-gap: 0.5rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contact-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+// .contact-card:hover {
+//     transform: translateY(-5px);
+// }
+
+.contact-card {
+    // width: 200px;
+    // height: 300px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-top: 20vh;
+    // margin: 50px;
+    display: flex;
+
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 40px 2px rgba(0, 0, 0, 0.4);
+    background: #000;
+    transform-origin: center center 0px;
+    transition: all .5s ease-out;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+    z-index: 1;
+    color: #fff;
+
+    &:hover {
+        animation: unset;
+        // margin-top: 18vh;
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+}
+
+
+.contact-card__img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 0.5rem 0;
+}
+
+.contact-card__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-card__text {
+    margin-bottom: 20px;
+}
+
+.contact-card__link {
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+//---------------------------------------------//
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}

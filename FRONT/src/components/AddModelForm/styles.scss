@@ -1,0 +1,121 @@
+//for mobile
+@media screen and (min-width: 768px) {
+  .add-model-container {
+    width: 50% !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+.add-model-container {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+// display: none;
+.add-model-content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #FFF;
+  border-radius: 10px;
+  color: #555;
+  align-items: center;
+}
+
+.add-model__header {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.add-model__header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.add-model__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-label-form {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.add-model__form select,
+.add-model__form input[type="text"],
+.add-model__form input[type="file"],
+.add-model__form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  margin-top: 0.5rem;
+}
+
+.add-model__form select:focus,
+.add-model__form input:focus,
+.add-model__form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-model__form select option:first-child {
+  color: grey;
+}
+
+.btn-wrapper {
+  display: flex;
+  // justify-content: space-between;
+  margin-top: 20px;
+}
+
+// .btn-left,
+.btn-right {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-left {
+  background-color: #FF8507;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-right {
+  background: rgb(33, 50, 68);
+  background: linear-gradient(90deg, rgba(33, 50, 68, 1) 0%, rgba(150, 55, 127, 1) 38%, rgba(20, 22, 28, 1) 100%);
+  color: #fff;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333;
+}
