@@ -60,7 +60,12 @@ export default function Card({ name, picture, pseudo, like, id }) {
           <Edit className="card__logo-edit" onClick={handleEdit} />
         } */}
       </div>
-      <div className="card-img-wrapper"><img className="card__thumbnail" src={picture} alt="model 3D" onClick={handleCardClick} /></div>
+      <div className="card-img-wrapper">
+        <img
+          className="card__thumbnail"
+          src={picture} alt="model 3D"
+          onClick={handleCardClick} />
+      </div>
       <div className="card__details">
         <div className='card__infos'>
           <p className='card__author-text'>{pseudo}</p>

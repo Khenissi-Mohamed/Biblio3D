@@ -47,8 +47,8 @@
 }
 
 .card__thumbnail:hover {
-  -webkit-animation: shadow-pop-tr .3s cubic-bezier(.47, 0.000, .745, .715) both;
-  animation: shadow-pop-tr .3s cubic-bezier(.47, 0.000, .745, .715) both
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
 }
 
 @keyframes shadow-pop-tr {

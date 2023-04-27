@@ -70,13 +70,13 @@ const Memberdashboard = () => {
     }
 
     return (
-        <div className="dashboard">
-
+        <>
             <NavBar />
-            <div className='dashboard__main'>
-                {/*--------------Header page---------------------*/}
-                <div className="dashboard-header">
+            <div className="dashboard">
+                <div className='dashboard__main'>
+                    {/*--------------Header page---------------------*/}
                     <div className="dashboard-header">
+                        {/* <div className="dashboard-header"> */}
                         <img className="dashboard-header__member-img" src={image} />
                         <div className="dashboard-header__memberdetail">
                             <h4>{pseudo}</h4>
@@ -85,37 +85,38 @@ const Memberdashboard = () => {
                                 Edit profil
                             </button>
                         </div>
+                        {/* </div> */}
                     </div>
-                </div>
-                {/*--------------Main page--------------------*/}
-                <div className="page-title">
-                    <h1>My models</h1>
-                </div>
-                <div className="myModels">
+                    {/*--------------Main page--------------------*/}
+                    <div className="page-title">
+                        <h1>My models</h1>
+                    </div>
+                    <div className="myModels">
 
-                    {
-                        isLoading ? <><div className="spinner"></div> <p>Chargement en cours...</p></> :
+                        {
+                            isLoading ? <><div className="spinner"></div> <p>Chargement en cours...</p></> :
 
-                            result &&
-                            result.map((card) => (
-                                <div className="myModels__card">
+                                result &&
+                                result.map((card) => (
+                                    <div className="myModels__card">
 
-                                    <Card key={card.id} {...card} />
+                                        <Card key={card.id} {...card} />
 
-                                    <Edit className="dashboard__logo-edit" onClick={() => handleEdit(card.id)} />
+                                        <Edit className="dashboard__logo-edit" onClick={() => handleEdit(card.id)} />
 
-                                </div>
-                            ))
-                    }
+                                    </div>
+                                ))
+                        }
 
-                    {/*--------------Add model--------------------*/}
-                    <button onClick={handleCloseUpLoad} className="navbar__upload">
-                        <Plus className="button-icon-addmodel__icon" />
-                    </button>
+                        {/*--------------Add model--------------------*/}
+                        <button onClick={handleCloseUpLoad} className="navbar__upload">
+                            <Plus className="button-icon-addmodel__icon" />
+                        </button>
+                    </div>
                 </div>
             </div>
             <Footer />
-        </div>
+        </>
 
     );
 }
