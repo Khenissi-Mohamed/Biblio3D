@@ -1,10 +1,12 @@
 .signup {
-  background-color:#fff;
+  background-color: #fff;
   border-radius: 10px;
   padding: 1rem;
   color: #555;
   width: 400px;
-  margin-top:4rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .header-modal {
@@ -72,40 +74,37 @@
 
 
 .signup__field {
-display: flex;
-flex-direction: column;
-gap: 0.5rem;
-font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: .9rem;
 }
 
 .signup-btn {
-border: none;
-background: #00c1ff;
-color: #FFF;
-border-radius: 0.3rem;
-padding: 1rem;
-font-size: 1rem;
+  border: none;
+  background: #00c1ff;
+  color: #FFF;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  font-size: 1rem;
 
-cursor: pointer;
+  cursor: pointer;
 }
 
 .signup-btn:hover {
-background-color: #ff00ff;
-color: #fff;
-box-shadow: 0px 0px 15px 0px rgba(255, 0, 255, 1);
-transition: all 0.3s ease-in-out;
-transform: translateY(10px) rotate(0deg);
-animation-name: spin-down;
-animation-duration: 0.7s;
-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-animation-fill-mode: forwards;
+  background-color: #ff00ff;
+  color: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(255, 0, 255, 1);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(10px) rotate(0deg);
+  animation-name: spin-down;
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 768px) {
-.signup {
-  width: 90%;
-}
-.signup-btn{
-  width: 100%;
-}
+  .signup {
+    width: 90%;
+  }
 }
