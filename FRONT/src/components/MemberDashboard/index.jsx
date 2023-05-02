@@ -47,7 +47,7 @@ const Memberdashboard = () => {
     const fetchData = async () => {
         const response = await dispatch(fetchOne(localStorage.getItem('userId')));
         await setImage(response.picture);
-        const result = await dispatch(fetchCardsByUser(pseudo));
+        const result = await dispatch(fetchCardsByUser());
         setResult(result);
     };
 

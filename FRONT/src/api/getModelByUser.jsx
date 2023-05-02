@@ -1,6 +1,6 @@
 import { axiosInstance } from './axiosInstance';
 
-export const fetchCardsByUser = (pseudo) => async (dispatch, getState) => {
+export const fetchCardsByUser = () => async (dispatch, getState) => {
 
 
     try {

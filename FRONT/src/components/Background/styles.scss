@@ -34,8 +34,9 @@
     }
 
     &__pseudo {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 700;
+        font-style: italic;
         color: #2CB5ED;
         margin-bottom: 1rem;
     }
@@ -77,6 +78,22 @@
 
         100% {
             transform: translateY(0);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-content {
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__pseudo {
+            font-size: 2rem;
+        }
+
+        &__text {
+            font-size: 1rem;
         }
     }
 }
