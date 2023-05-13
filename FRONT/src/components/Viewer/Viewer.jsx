@@ -40,7 +40,7 @@ const Viewer = () => {
 
     //ajout de la camera a la scene
     scene.add(camera);
-//essaie de nouvelle request
+    //essaie de nouvelle request
     // Ajouter une lumière directionnelle avec les ombres
     const dirLight = new THREE.DirectionalLight('#ffffff', 3);
     dirLight.position.set(0.5, 3, 2);
@@ -49,8 +49,8 @@ const Viewer = () => {
     scene.add(dirLight)
     // scene.add(dirLight);
 
-    const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 0.8 );
-    scene.add( light );
+    const light = new THREE.HemisphereLight(0xffffbb, 0x080820, 0.8);
+    scene.add(light);
 
     //ambient light
     const ambient = new THREE.AmbientLight('#ffffff', 1)
@@ -68,29 +68,10 @@ const Viewer = () => {
     controls.enableDamping = true;
     controls.zoomSpeed = 0.5;
 
-    const cubeTextureLoader = new THREE.CubeTextureLoader();
-    const environmentMap = cubeTextureLoader.load([
-      '/public/px.jpg',
-      '/public/nx.jpg',
-      '/public/py.jpg',
-      '/public/ny.jpg',
-      '/public/pz.jpg',
-      '/public/nz.jpg',
-    ]);
-    environmentMap.intensity = 1
-    scene.environment = environmentMap
-
-
-
-
-
-
-
-
     // Charger le modèle 3D
     const loadModel = async () => {
       try {
-        const response = await axios.get(`https://projet-biblio-3d-production.up.railway.app/api/model/glb/${id}`, {
+        const response = await axios.get(`https://biblio3d-production.up.railway.app/api/model/glb/${id}`, {
           responseType: 'arraybuffer'
         });
 
