@@ -71,7 +71,7 @@ const Viewer = () => {
     // Charger le modèle 3D
     const loadModel = async () => {
       try {
-        const response = await axios.get(`https://biblio3d-production.up.railway.app/api/model/glb/${id}`, {
+        const response = await axios.get(`https://biblio-production-5483.up.railway.app/api/model/glb/${id}`, {
           responseType: 'arraybuffer'
         });
 
