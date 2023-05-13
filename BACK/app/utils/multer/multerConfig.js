@@ -25,7 +25,7 @@ const multerConfig = function () {
     });
     return multer({ 
         storage: storage ,
-        limits: { fileSize: 1024 * 1024 * 5 },
+        limits: { fileSize: 1024 * 1024 * 50 },
         fileFilter: 
         function(req, file, cb) {
             if(file.mimetype !== 'image/jpeg' && file.mimetype !== 'image/png') {
