@@ -49,7 +49,6 @@ function ThreeScene() {
                         <planeGeometry args={[10, 10]} />
                         <shadowMaterial opacity={0.5} />
                     </mesh>
-                    {/* <Experience /> */}
                     <Cube position={[0, 0, 0]} />
                     <Sphere position={[2, 0, 0]} />
                 </Canvas>
