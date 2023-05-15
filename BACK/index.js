@@ -26,10 +26,10 @@ app.use(cors({
 app.use(helmet());
 
 //timeout
-app.use(timeout("3m"));
-app.use(function(req, res, next){
-  if (!req.timedout) next();
-});
+// app.use(timeout("5m"));
+// app.use(function(req, res, next){
+//   if (!req.timedout) next();
+// });
 
 app.use(router);
 

@@ -32,6 +32,9 @@ const Memberdashboard = () => {
     const isUploaded = useSelector((state) => state.cards.isUploaded);
     const isDeleted = useSelector((state) => state.cards.isDeleted);
 
+    //--------------------photo de profil user--------------------//
+    const user = useSelector((state) => state.user.user);
+
 
 
     const handleCloseUpLoad = () => {
@@ -77,7 +80,7 @@ const Memberdashboard = () => {
                     {/*--------------Header page---------------------*/}
                     <div className="dashboard-header">
                         {/* <div className="dashboard-header"> */}
-                        <img className="dashboard-header__member-img" src={image} />
+                        <img className="dashboard-header__member-img" src={user.picture} />
                         <div className="dashboard-header__memberdetail">
                             <h4>{pseudo}</h4>
                             {/* Link to profil edition page */}
@@ -98,9 +101,9 @@ const Memberdashboard = () => {
 
                                 result &&
                                 result.map((card) => (
-                                    <div className="myModels__card">
+                                    <div className="myModels__card" key={card.id}>
 
-                                        <Card key={card.id} {...card} />
+                                        <Card  {...card} />
 
                                         <Edit className="dashboard__logo-edit" onClick={() => handleEdit(card.id)} />
 

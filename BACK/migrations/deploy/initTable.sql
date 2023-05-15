@@ -2,8 +2,7 @@
 -- Deploy 3db:initTable to pg
 
 BEGIN;
- --if we decide to stock buffer for avatar we change type of picture colmuns to BYTEA
- --if we decide to stock path for avatar we change type of picture colmuns to TEXT
+
 CREATE TABLE IF NOT EXISTS "user" (
     "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "pseudo" TEXT NOT NULL UNIQUE,
