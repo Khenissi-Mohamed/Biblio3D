@@ -9,10 +9,8 @@ const debug = require("debug")("3db: validation");
 function validation(schema) {
 
 	return async (req, res, next) => {
-
 		
 		let data = req.body;
-
 		
          debug("info", req.files)
          if(req.files && req.files.picture && req.files.picture.length !== {}) {
@@ -22,13 +20,10 @@ function validation(schema) {
 		// debug(pathModel)
 		data = { ...req.body, picture};
 		debug(data)}
-
 	
 		 data = req.body;
 
-		
-		try {
-			
+		try {	
 			const value = await schema.validateAsync(data);
 
 			next();
@@ -37,7 +32,6 @@ function validation(schema) {
 			next(err);
 		}
 	};
-
 }
 
 /**
