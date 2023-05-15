@@ -28,18 +28,29 @@ const schema = {
 	}).options({ convert: true }),
 
 	//TODO: TAG : STRING OR ARRAY ?
+	// model_create: Joi.object({
+	// 	/*pathModel: Joi.string().required(),*/
+	// 	name: Joi.string().required(),
+	// 	/*size: Joi.number(),*/
+	// 	/*format: Joi.string(),*/
+	// 	download: Joi.boolean().required(),
+	// 	description: Joi.string().required(),
+	// 	/*picture: Joi.string(),*/
+	// 	tag: Joi.string().required(),
+	// 	user_id: Joi.number(),
+	// 	category_id: Joi.string()
+	// }).options({ convert: true }),
 	model_create: Joi.object({
-		/*pathModel: Joi.string().required(),*/
 		name: Joi.string().required(),
-		/*size: Joi.number(),*/
-		/*format: Joi.string(),*/
+		format: Joi.string().required(),
+		size: Joi.number().required(),
 		download: Joi.boolean().required(),
 		description: Joi.string().required(),
-		/*picture: Joi.string(),*/
-		tag: Joi.string().required(),
-		user_id: Joi.number(),
-		category_id: Joi.string()
-	}).options({ convert: true }),
+		picture: Joi.string(),
+		tag: Joi.array().items(Joi.string()).required(),
+		user_id: Joi.number().required(),
+	  }).options({ convert: true }),
+	  
 
 	model_update: Joi.object({
 		/*data: Joi.string(),*/
