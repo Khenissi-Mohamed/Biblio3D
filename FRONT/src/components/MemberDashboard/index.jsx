@@ -32,9 +32,9 @@ const Memberdashboard = () => {
     const isUploaded = useSelector((state) => state.cards.isUploaded);
     const isDeleted = useSelector((state) => state.cards.isDeleted);
 
-    //--------------------photo de profil user--------------------//
+    //--------------------photo de profil--------------------//
     const user = useSelector((state) => state.user.user);
-
+    console.log('useroooo', user);
 
 
     const handleCloseUpLoad = () => {

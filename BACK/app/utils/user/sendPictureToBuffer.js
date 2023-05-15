@@ -23,7 +23,7 @@ const sendPicture = (path) => {
           reject(err);
         }
         const picture = data;
-        
+        console.log("sucer", picture);
         const buffer = Buffer.from(picture, "base64");
      
 
