@@ -2,6 +2,7 @@ import { setCards } from '../store/reducers/cards';
 import { axiosInstance } from './axiosInstance';
 
 export const fetchCards = () => async (dispatch) => {
+    console.log("ici");
     try {
         const response = await axiosInstance.get('/model');
         // const data = response.data;
@@ -16,10 +17,12 @@ export const fetchCards = () => async (dispatch) => {
 
             item.picture = url
         }
-
+        console.log('et la');
+        console.log("fetchcards", response.data);
         dispatch(setCards(response.data));
 
     } catch (error) {
+        console.log("et l");
         console.error(error);
     }
 };

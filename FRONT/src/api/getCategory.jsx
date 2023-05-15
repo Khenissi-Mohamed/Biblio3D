@@ -4,7 +4,6 @@ import { axiosInstance } from './axiosInstance';
 
 
 export const fetchCategories = () => async (dispatch) => {
-    console.log('category')
     try {
 
         const response = await axiosInstance.get(`/category`);
